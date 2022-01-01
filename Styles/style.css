@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+*{
+    box-sizing: border-box;
+}
+/* Navbar */
+.nav-center{
+    margin-right: auto;
+    font-size: 18px;
+}
+.nav-center > li > a {
+    color: #F9FCFB !important;
+    font-style: bold;
+}
+.navbar-toggler-color{
+    border-color: black !important;
+}
+.navbar-toggler-icon-color{
+color: black !important;
+}
+.nav-padding{
+    padding: 20px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    
+}
+.nav-color{
+    background-color: #388087 !important;
+}
+
+/* Carousel */
+.carousel .carousel-item {
+    height: 500px;
+  }
+  
+  .carousel-item img {
+      position: absolute;
+      object-fit:cover;
+      top: 0;
+      left: 0;
+      min-height: 500px;
+  }
+/* About  */
+.about-us{
+    background-color: #f6f6f2;
+    padding: 40px;
+}
+.about-button{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    
+}
+
+.about-button:hover{
+    color: white;
+    background-color: black;
+    transition: 1s;
+}
+.about-img > img{
+   border-radius: 10px;
+}
+
+/* Gallery */
+.gallery{
+    background-color: #c2edce;
+    max-width: 100vw;
+    padding: 30px;
+}
+
+.gallery > .center{
+    text-align: center;
+
+}
+
+.container-1{
+    display: flex;
+    width: 90vw;
+
+}
+.panel {
+    background-size:  auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: white;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+
+}
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+.panel.active{
+    flex: 5;
+}
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+@media(max-width: 560px){
+    .container-1{
+        width: 80vh;
+        display: none;
+    }
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+@media (max-width: 685px){
+    .container-1{
+        display: none;
+    }
+}
+@media (min-width: 686px){
+    .container-2{
+        display: none;
+    }
+}
+/* Footer */
+.custom-footer-bg{
+    background-color: #444444;
+    color: white;
+}
